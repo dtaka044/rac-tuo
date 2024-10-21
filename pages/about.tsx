@@ -1,5 +1,6 @@
 import Image from "next/image";
 import localFont from "next/font/local";
+import Headline from "@/components/Headline";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,16 +27,7 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Hello Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              pages/index.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <Headline title="About Page" page="about"/>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
